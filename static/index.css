@@ -6,6 +6,10 @@
     color: white;
 }
 
+a {
+    /* padding: auto; */
+}
+
 html, body {
     /* background-color: burlywood; */
     height: 100vh;
@@ -13,7 +17,11 @@ html, body {
 
 .navbar {
     background-color: black;
-    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .container {
