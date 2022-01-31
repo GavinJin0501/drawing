@@ -5,6 +5,7 @@
 
 body {
     background-image: url("./w95_vpwave.jpg");
+    background-repeat: repeat-y;
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
