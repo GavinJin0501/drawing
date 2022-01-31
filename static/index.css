@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+html, body {
+    /* background-color: burlywood; */
+    height: 100vh;
+}
+
+.navbar {
+    background-color: black;
+    width: 100vw;
+}
+
+.container {
+    /* margin-right: 15%;
+    margin-left: 15%; */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-title {
+    /* flex: 1; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 900;
+}
+
+#ptitle {
+    font-family: "Chalkduster";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+}
+
+#plinks {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 1vw;
+}
+
+#plinks:hover {
+    color: gray;
+    cursor: grab;
+}
+
+#course-num {
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.assignment .container, .about {
+    height: 60vh;
+    border-bottom: 1px solid white;
+
+    /* padding: 30px; */
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.assignment .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.assignment .container:nth-child(even) {
+    background-color: rgb(220,220,220);
+}
+
+.assignment .container:nth-child(odd) {
+    background-color: rgb(240,240,240);
+}
+
+.assignment h1, .assignment a {
+    margin-left: 15px;
+    color: black;
+    text-decoration: underline;
+}
+
+.description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.preview {
+    flex: 2;
+    /* background-color: aquamarine; */
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-position: cover;
+}
+
+.preview > a {
+    padding: none;
+}
+
+.preview > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.active {
+    background-color: grey;
+}
+
+.about {
+    background-color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url("./about_bg.png");
+    background-size: 100%;
+    object-fit: fill;
+    width: auto;
+    height: 35%;
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: repeat(4, 25%);
+    align-items: center;
+}
+
+#name {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#name > span {
+    font-size: 4.5vw;
+    color: black;
+}
+
+#personal-info {
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    color: black;
+    text-align: center;
+}
+
+#personal-info > * {
+    color: black;
+    font-size: 1.3vw;
+}
+
+#email {
+    color: black;
+    font-size: 1.2vw;
+}
+
+.des-title {
+    flex: 1;
+    display: flex; 
+    align-items: center; 
+    justify-content: left;
+
+    text-align: left;
+    padding: 20px;
+}
+
+.des-title > * {
+    font-size: 2vw;
+}
+
+.des-content {
+    flex: 3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.des-content > * {
+    color: black;
+    font-size: 1.4vw;
+}
