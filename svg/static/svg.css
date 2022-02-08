@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* background-color: rgb(191, 188, 189); */
+    background-color:lightgray;
+}
+
+.big-header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+
+    /* background-color:honeydew; */
+}
+
+.big-header > span {
+    font-size: 4vw;
+    color: rgb(50, 50, 50)
+}
+
+.content {
+    width: 100vw;
+}
+
+.elements {
+    width: 18vw;
+    height: 18vw;
+    background-color:darkgray;
+    /* border: 1px solid black; */
+    border-radius: 5em;
+    fill: rgb(70, 70, 70);
+    margin: 10px 20px 0 20px;
+}
+
+.row-first {
+    padding: 2vh 10vw 1vh 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+.row-second {
+    padding: 1vh 10vw 0 10vw;
+    display: flex;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* svg:hover {
+    fill: lightblue;
+} */
+
+#bathroom:hover {
+    background-image: url("./bathroom.jpg");
+    background-size: cover;
+    fill-opacity: 60%;
+    fill: whitesmoke;
+}
+
+#kitchen:hover {
+    background-image: url("./kitchen.jpg");
+    background-size: cover;
+    fill-opacity: 70%;
+    fill: whitesmoke;
+}
+
+#study:hover {
+    background-image: url("./study.jpg");
+    background-size: cover;
+    fill-opacity: 60%;
+    fill: whitesmoke;
+}
+
+#livingroom:hover {
+    background-image: url("./livingroom.jpg");
+    background-size: cover;
+    fill-opacity: 60%;
+    fill: whitesmoke;
+}
+
+#bedroom:hover {
+    background-image: url("./bedroom.jpg");
+    background-size: cover;
+    fill-opacity: 80%;
+    fill: whitesmoke;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper > span {
+    font-size: 1.5vw;
+    background-color: darkgray;
+    padding: 0 15px 0 15px;
+    color: rgb(70, 70, 70);
+    border-radius: 3em;
+    margin-top: 10px;
+}

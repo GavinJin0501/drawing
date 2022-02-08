@@ -85,11 +85,11 @@ html, body {
     justify-content: space-between;
 }
 
-.assignment .container:nth-child(even) {
+.assignment .container:nth-child(odd) {
     background-color: rgb(220,220,220);
 }
 
-.assignment .container:nth-child(odd) {
+.assignment .container:nth-child(even) {
     background-color: rgb(240,240,240);
 }
 
