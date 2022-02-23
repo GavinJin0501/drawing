@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:cyan;
+}
+
+#scene {
+    width: 300px;
+    height: 300px;
+    perspective: 600px;
+    perspective-origin: top;
+    /* border: 1px solid black; */
+}
+
+.whole {
+    background-image: url("./logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    /* background-color: aqua; */
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes anime {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(-360deg);}
+}
+
+.roof {
+    background-image: linear-gradient(180deg, greenyellow, green);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path:polygon(50% 13.39%, 75% 100%, 25% 100%);
+    background-color:antiquewhite;
+    opacity: 0.5;
+    /* border: 1px solid wheat; */
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 300px;
+    text-align: center;
+    font-size: 2em;
+
+    transform-origin: 50% 100%;
+}
+
+.roof:nth-child(1) {
+    transform: translateY(-150px) translateZ(150px) rotateX(35.2deg);
+}
+
+.roof:nth-child(2) {
+    transform: rotateY(90deg) translateZ(150px) translateY(-150px) rotateX(35.2deg);
+}
+
+.roof:nth-child(3) {
+    transform: translateY(-150px) translateZ(-150px) rotateX(-35.2deg);
+}
+
+.roof:nth-child(4) {
+    transform: rotateY(90deg) translateZ(-150px) translateY(-150px) rotateX(-35.2deg);
+}
+
+.roof:nth-child(5) {
+    transform: rotate(180deg) translateY(150px) translateZ(150px) rotateX(35.2deg);
+}
+
+.roof:nth-child(6) {
+    transform: rotate(180deg) rotateY(90deg) translateZ(-150px) translateY(150px) rotateX(-35.2deg);
+}
+
+.roof:nth-child(7) {
+    transform: rotate(180deg) translateY(150px) translateZ(-150px) rotateX(-35.2deg);
+}
+
+.roof:nth-child(8) {
+    transform: rotate(180deg) rotateY(90deg) translateY(150px) translateZ(150px) rotateX(35.2deg);
+}
+
+.roof:hover {
+    opacity: 0.8;
+    transition: all 500ms ease 0s;
+}
+
+.whole {
+    transition-property: transform;
+    transition-duration: 3s;
+}
+
+.whole:hover {
+    animation-direction: reverse;
+}
+
+.whole:active {
+    animation-duration: 3s;
+}

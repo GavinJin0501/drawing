@@ -115,6 +115,7 @@ html, body {
 
 .preview > a {
     padding: none;
+    object-fit: fill;
 }
 
 .preview > a > img {
