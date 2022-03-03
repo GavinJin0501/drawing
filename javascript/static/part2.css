@@ -1,0 +1,24 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    top: 500px;
+    left: 500px;
+    position: absolute;
+}
+
+div {
+    font-size: 8vw;
+    color: whitesmoke;
+    opacity: 0.8;
+}

@@ -8,16 +8,19 @@ body {
     align-items: center;
     justify-content: center;
     transition: all 500ms ease-in;
+    background-color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .content {
-    width: 70vw;
+    width: 60vw;
     height: 100vh;
-    background-color: aquamarine;
+    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 0 0 20px #555555;
 }
 
 .vending-machine {
@@ -29,13 +32,15 @@ body {
 }
 
 .title-board {
-    font-size: 3em;
+    font-size: 4em;
     margin-bottom: 1vh;
+    margin-top: 5vh;
 }
 
 .info {
-    font-size: 1.5em;
+    font-size: 2em;
     border: 2px black solid;
+    margin-bottom: 5vh;
 }
 
 .square {
@@ -46,11 +51,16 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: opacity 500ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
-#coke {
-    background-image: url("./coke.png");
+.square:hover {
+    transform: scale(1.2);
+}
+
+
+#coca-cola {
+    background-image: url("./coca-cola.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -71,6 +81,10 @@ body {
 }
 
 p {
-    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
+#name {
+    color: brown;
+}
