@@ -39,8 +39,10 @@ body {
 
 .info {
     font-size: 2em;
-    border: 2px black solid;
+    /* border: 2px black solid; */
     margin-bottom: 5vh;
+    width: 100%;
+    text-align: center;
 }
 
 .square {
