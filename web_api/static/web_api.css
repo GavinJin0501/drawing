@@ -1,0 +1,57 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: lightblue;
+    height: 100%;
+    width: 100%;
+}
+
+
+.title {
+    height: 15vh;
+    font-size: 3vw;
+    text-align: center;
+    font-weight:bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 1vh 0 1vh 0; */
+    /* padding: 3vw; */
+    background-color: aliceblue;
+    
+}
+
+.introduction {
+    min-height: 75vh;
+    font-size: 1.5vw;
+    padding: 5vh;
+    flex: 2;
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+}
+
+.demo {
+    flex: 3;
+    background-color:aquamarine;
+    /* clip-path: circle(40%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+img {
+    /* object-fit: fill; */
+    clip-path: circle(30%);
+    z-index: 10;
+    position: absolute;
+    max-width:  50vw;
+    max-height: 50vw;
+}
