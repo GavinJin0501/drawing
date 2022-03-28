@@ -39,12 +39,13 @@ a {
 
 .demo {
     flex: 3;
-    background-color:aquamarine;
+    background-color:lightblue;
     /* clip-path: circle(40%); */
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: -1;
+    transition: all 500ms linear;
 }
 
 img {
