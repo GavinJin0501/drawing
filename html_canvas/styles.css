@@ -1,0 +1,25 @@
+/*
+Drawing on the Web
+2 horizontally-aligned canvas elements
+*/
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#frame {
+  width: 1260px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-evenly;
+}
+
+canvas {
+  width: 600px;
+  height: 400px;
+}
