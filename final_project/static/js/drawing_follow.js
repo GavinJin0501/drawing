@@ -25,18 +25,6 @@ function follow() {
         ghostY += Math.sign(y_diff) * 6 * Math.sin(Math.atan(Math.abs(y_diff) / Math.abs(x_diff)));
     }
 
-    // if (ghostCenterX - dstX > 5) {
-    //     ghostX -= 4; 
-    // } else if (dstX - ghostCenterX > 5) {
-    //     ghostX += 4;
-    // }
-
-    // if (ghostCenterY - dstY > 5) {
-    //     ghostY -= 4; 
-    // } else if (dstY - ghostCenterY > 5) {
-    //     ghostY += 4;
-    // }
-
     ghost.style.left = ghostX + "px";
     ghost.style.top = ghostY + "px";
     setSvgCenter();

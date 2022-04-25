@@ -1,0 +1,23 @@
+html, body {
+    margin:0;
+    height:100%;
+    padding: 0;
+    background-color: gray;
+}
+
+
+#ghost {
+    position: absolute;
+    width: 15vw;
+    height: 15vh;
+    animation: swing 2s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes swing {
+    0% {transform: rotate(0deg); opacity: 1;}
+    25% {transform: rotate(20deg);}
+    50% {transform: rotate(0deg); opacity: 0;}
+    75% {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg); opacity: 1;}
+}
