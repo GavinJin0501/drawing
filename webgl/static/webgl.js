@@ -73,11 +73,6 @@ function init() {
     light.position.set(1, 1, 1);
     scene.add(light);
 
-    // const pointLight = new THREE.PointLight(0xff00ff, 1, 1000); 
-    // pointLight.position.set(-400, 400, 400);
-    // scene.add(pointLight);
-
-
     const loader = new THREE.GLTFLoader();
     loader.load('./static/rocket.gltf', function(gltf) { 
         model = gltf.scene;
@@ -130,7 +125,6 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('resize', () => {
-    setup(); 
-    bling(); 
+    setup();
 });
 
