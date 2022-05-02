@@ -40,3 +40,13 @@ html, body {
     50% {opacity: 0;}
     100% {opacity: 1;}
 }
+
+svg {
+    shape-rendering: optimizeSpeed;
+    image-rendering: optimizeSpeed;
+    text-rendering: optimizeSpeed;
+  }
+
+  .active {
+      opacity: 0.5;
+  }

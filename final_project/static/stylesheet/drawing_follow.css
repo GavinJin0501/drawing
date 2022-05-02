@@ -5,18 +5,23 @@ html, body {
     background-color: white;
 }
 
-svg {
-  shape-rendering: optimizeSpeed;
-}
-
 body{
   overflow: hidden;
 }
+
+svg, img {
+  shape-rendering: optimizeSpeed;
+  image-rendering: optimizeSpeed;
+  text-rendering: optimizeSpeed;
+}
+
+
+
 #ghost {
     position: absolute;
     width: 50vw;
     height: 50vh;
-    /* animation: swing 2s linear; */
+    animation: swing 2s linear;
     animation-iteration-count: infinite;
 }
 
@@ -31,7 +36,7 @@ body{
     left: 75vw;
     /* top:0px; */
     transform-origin: center;
-    animation: rotate 10s 0s linear;
+    animation: rotate 10s 0s ;
     animation-iteration-count: infinite;
 }
 #cloud1 {
@@ -46,6 +51,7 @@ body{
     left: 400px;
     /* top:0px; */
 }
+
 @keyframes rotate {
     0% {
       transform: rotate(0deg); 
@@ -59,8 +65,8 @@ body{
   }
 @keyframes swing {
     0% {transform: rotate(0deg);}
-    25% {transform: rotate(10deg);}
+    25% {transform: rotate(20deg);}
     50% {transform: rotate(0deg);}
-    75% {transform: rotate(-10deg);}
+    75% {transform: rotate(-20deg);}
     100% {transform: rotate(0deg);}
 }

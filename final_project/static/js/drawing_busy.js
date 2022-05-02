@@ -1,7 +1,7 @@
 let winWidth;   // window width
 let winHeight;  // window height
 const ghostArr = [];
-const ghostNum = 20;
+const ghostNum = 5;
 const body = document.querySelector("body");
 
 class Ghost {
@@ -19,6 +19,10 @@ class Ghost {
         svg.appendChild(use);
         body.appendChild(svg);
         this.element = svg;
+
+        use.addEventListener("mouseover", function(evt) {
+            evt.target.classList.toggle("active");
+        });
     }
 
     walk() {

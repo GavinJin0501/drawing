@@ -17,7 +17,6 @@ body {
 
 #ghost3{
   position: absolute;
-  /* transform: scale(0.6); 
   left:8vw;
   top: 45vh;
   width:42vw;
@@ -72,7 +71,7 @@ body {
 .svgs{
     width: 100%;
     z-index: -1;
-}
+} */
 @keyframes littleswing {
   0% {transform: rotate(0deg);}
   50% {transform: rotate(3deg);}
@@ -98,7 +97,7 @@ body {
     50% {
         transform: translateY(-20px);
     }
-} */
+}
 
 #new-jar1 {
   display: absolute;
@@ -120,12 +119,29 @@ svg {
   margin: 10vh 0 10vh 0;
   position: absolute;
 }
-
+#jar1{
+  transform: scale(1.3);
+}
+#jar3{
+  transform: scale(1.2);
+}
+#ghost1{
+  animation: leftswing 2s infinite;
+}
+#ghost2{
+  animation: floaty 2s infinite;
+}
 #ghost3 {
   left: 3vw;
+  animation: littleswing 2s infinite;
 }
-
 
 #ghost4 {
   left: 10vw;
+  width: 35vw;
+  animation: floaty 2s infinite;
+}
+#ghost5 {
+  top:3vh;
+  animation: swing 2s infinite;
 }
