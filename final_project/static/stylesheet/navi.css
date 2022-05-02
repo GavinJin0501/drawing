@@ -126,9 +126,12 @@ svg {
   transform: scale(1.2);
 }
 #ghost1{
+  width: 33vw;
   animation: leftswing 2s infinite;
 }
 #ghost2{
+  left:3vw;
+  top:3vh;
   animation: floaty 2s infinite;
 }
 #ghost3 {
@@ -139,6 +142,7 @@ svg {
 #ghost4 {
   left: 10vw;
   width: 35vw;
+  top:10vh;
   animation: floaty 2s infinite;
 }
 #ghost5 {

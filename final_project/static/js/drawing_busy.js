@@ -1,20 +1,25 @@
 let winWidth;   // window width
 let winHeight;  // window height
 const ghostArr = [];
-const ghostNum = 5;
+const ghostNum = 10;
 const body = document.querySelector("body");
-
+let number = 3;
 class Ghost {
     constructor() {
         // create svg element and append it to the body
         const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
         svg.id = "ghost";
-        let number = Math.floor(Math.random() * 4 + 3)
+        number += 1;
+        if (number>6) {
+            number = 3;
+        }
+        // let number = Math.floor(Math.random() * 4 + 3)
         const ghostImage = "./static/svgs/ghost"+number.toString()+".svg#ghost" + number.toString()
         if (number === 4|| number === 6 ) {
             svg.style.height = '40vh'
         }
+    
         use.setAttribute("href", ghostImage);
         svg.appendChild(use);
         body.appendChild(svg);

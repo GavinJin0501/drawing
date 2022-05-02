@@ -9,18 +9,18 @@ body{
   overflow: hidden;
 }
 
-svg, img {
+/* svg, img {
   shape-rendering: optimizeSpeed;
   image-rendering: optimizeSpeed;
   text-rendering: optimizeSpeed;
-}
+} */
 
 
 
 #ghost {
     position: absolute;
-    width: 50vw;
-    height: 50vh;
+    width: 30vw;
+    height: 30vh;
     animation: swing 2s linear;
     animation-iteration-count: infinite;
 }
@@ -32,8 +32,8 @@ svg, img {
 }
 #sun {
   position: absolute;
-    width: 23vw;
-    left: 75vw;
+    width: 33vw;
+    left: 70vw;
     /* top:0px; */
     transform-origin: center;
     animation: rotate 10s 0s ;
@@ -41,13 +41,13 @@ svg, img {
 }
 #cloud1 {
   position: absolute;
-    width: 40vw;
+    width: 50vw;
     left: 1000px;
     top:-5vh;
 }
 #cloud2 {
   position: absolute;
-  width: 30vw;
+  width: 40vw;
     left: 400px;
     /* top:0px; */
 }
