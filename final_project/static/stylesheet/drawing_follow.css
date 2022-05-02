@@ -16,7 +16,7 @@ body{
     position: absolute;
     width: 50vw;
     height: 50vh;
-    animation: swing 2s linear;
+    /* animation: swing 2s linear; */
     animation-iteration-count: infinite;
 }
 
@@ -59,8 +59,8 @@ body{
   }
 @keyframes swing {
     0% {transform: rotate(0deg);}
-    25% {transform: rotate(20deg);}
+    25% {transform: rotate(10deg);}
     50% {transform: rotate(0deg);}
-    75% {transform: rotate(-20deg);}
+    75% {transform: rotate(-10deg);}
     100% {transform: rotate(0deg);}
 }
