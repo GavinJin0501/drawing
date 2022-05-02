@@ -1,7 +1,7 @@
 let winWidth;   // window width
 let winHeight;  // window height
 const ghostArr = [];
-const ghostNum = 40;
+const ghostNum = 20;
 const body = document.querySelector("body");
 
 class Ghost {
