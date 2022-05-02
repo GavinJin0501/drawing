@@ -2,18 +2,61 @@ html, body {
     margin:0;
     height:100%;
     padding: 0;
-    background-color: gray;
+    background-color: white;
 }
 
+svg {
+  shape-rendering: optimizeSpeed;
+}
 
+body{
+  overflow: hidden;
+}
 #ghost {
     position: absolute;
-    width: 15vw;
-    height: 15vh;
+    width: 50vw;
+    height: 50vh;
     animation: swing 2s linear;
     animation-iteration-count: infinite;
 }
 
+#tree{
+  position: absolute;
+  width: 115vw;
+  left: 6vw;
+}
+#sun {
+  position: absolute;
+    width: 23vw;
+    left: 75vw;
+    /* top:0px; */
+    transform-origin: center;
+    animation: rotate 10s 0s linear;
+    animation-iteration-count: infinite;
+}
+#cloud1 {
+  position: absolute;
+    width: 40vw;
+    left: 1000px;
+    top:-5vh;
+}
+#cloud2 {
+  position: absolute;
+  width: 30vw;
+    left: 400px;
+    /* top:0px; */
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg); 
+    }
+    50%{
+      transform: rotate(180deg); 
+    }
+    100% { 
+      transform: rotate(360deg);
+    }
+  }
 @keyframes swing {
     0% {transform: rotate(0deg);}
     25% {transform: rotate(20deg);}

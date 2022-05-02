@@ -1,0 +1,131 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+/* #jar1{
+    transform: scale(1.7);
+    position: absolute;
+    transition: transform .2s;
+    left:-5vw;
+    top: 50vh;
+    width:120vw;
+    z-index: -1;
+}
+
+#ghost3{
+  position: absolute;
+  /* transform: scale(0.6); 
+  left:8vw;
+  top: 45vh;
+  width:42vw;
+  animation: littleswing 2s infinite;
+}
+
+
+#ghost4{
+  position: absolute;
+  left:-5vw;
+  top: 60vh;
+  width:90vw;
+  animation: floaty 2s infinite;
+}
+#ghost1{
+  position: absolute;
+  left:-2vw;
+  top: 30vh;
+  width:50vw;
+  animation: leftswing 2s infinite;
+}
+#jar2{
+  transform: scale(1.5);
+  position: absolute;
+  left:24vw;
+  top: 40vh;
+  width:115vw;
+  z-index: -1;
+}
+#ghost2{
+  position: absolute;
+  left:20vw;
+  top: 10vh;
+  width:120vw;
+  animation: floaty 2s infinite;
+}
+#jar3{
+  position: absolute;
+  left:12vw;
+  top: -8vh;
+  width:230vw;
+  z-index: -1;
+}
+#ghost5{
+  position: absolute;
+  left:65vw;
+  top: 30vh;
+  width:85vw;
+  animation: swing 2s linear;
+  animation-iteration-count: infinite;
+}
+.svgs{
+    width: 100%;
+    z-index: -1;
+}
+@keyframes littleswing {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(3deg);}
+  100% {transform: rotate(0deg);}
+}
+@keyframes leftswing {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(-3deg);}
+  100% {transform: rotate(0deg);}
+}
+@keyframes swing {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(5deg);}
+  50% {transform: rotate(0deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+@keyframes floaty {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+} */
+
+#new-jar1 {
+  display: absolute;
+}
+
+#container {
+  display: flex;
+}
+
+.part {
+  flex: 1;
+  border: 1px solid black;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+svg {
+  margin: 10vh 0 10vh 0;
+  position: absolute;
+}
+
+#ghost3 {
+  left: 3vw;
+}
+
+
+#ghost4 {
+  left: 10vw;
+}

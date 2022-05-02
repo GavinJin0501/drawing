@@ -10,7 +10,12 @@ class Ghost {
         const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
         svg.id = "ghost";
-        use.setAttribute("href", "./static/ghost.svg#svg2");
+        let number = Math.floor(Math.random() * 4 + 3)
+        const ghostImage = "./static/svgs/ghost"+number.toString()+".svg#ghost" + number.toString()
+        if (number === 4|| number === 6 ) {
+            svg.style.height = '40vh'
+        }
+        use.setAttribute("href", ghostImage);
         svg.appendChild(use);
         body.appendChild(svg);
         this.element = svg;

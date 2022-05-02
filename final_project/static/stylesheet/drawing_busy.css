@@ -5,16 +5,21 @@ html, body {
     max-height: 100%;
     overflow: hidden; 
     padding: 0;
-    background-color: gray;
+    background-color: white;
 }
 
 
 #ghost {
     position: absolute;
-    width: 15vw;
-    height: 15vh;
+    width: 30vw;
+    /* height: 15vh; */
     animation: swing 2s linear;
     animation-iteration-count: infinite;
+}
+#green {
+    position: absolute;
+    width: 99vw;
+    top:-8vh;
 }
 
 @keyframes swing {

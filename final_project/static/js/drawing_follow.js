@@ -7,9 +7,26 @@ let ghostCenterY;   // ghost center y coordinate
 let ghostX = 0;  
 let ghostY = 0;
 const ghost = document.querySelector("#ghost");
+const cloud1 = document.querySelector("#cloud1");
+const cloud2 = document.querySelector("#cloud2");
+let cloud2Pos= 400;
+let speed1 = 2;
+let speed2 = -2;
+let cloud1Pos = 800;
 let animation = requestAnimationFrame(follow);
-
-
+function cloudMove() {
+    if (cloud2Pos<100 || cloud2Pos>=600) {
+        speed2 *= -1
+    }
+    if (cloud1Pos<=300 || cloud1Pos>=800) {
+        speed1 *= -1
+    }
+    cloud1Pos += speed1;
+    cloud2Pos += speed2;
+    cloud1.style.left = cloud1Pos+ "px";
+    cloud2.style.left = cloud2Pos + "px";
+    requestAnimationFrame(cloudMove);
+}
 function follow() {
     animation = requestAnimationFrame(follow);
 
@@ -49,6 +66,7 @@ function mouseInteraction(evt) {
 
 
 window.addEventListener("load", setWinSize);
+window.addEventListener("load", cloudMove);
 window.addEventListener("resize", setWinSize);
 
 window.addEventListener('pointermove', mouseInteraction);

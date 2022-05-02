@@ -6,7 +6,12 @@ let ghostCenterX;   // ghost center x coordinate
 let ghostCenterY;   // ghost center y coordinate
 let ghostX = 0;  
 let ghostY = 0;
+let shipX = 87;
+let shipY = -30;
+let speedX = -0.3;
+let speedY = 0.5;
 const ghost = document.querySelector("#ghost");
+const ship = document.querySelector("#ship");
 let count = 0;
 
 
@@ -51,7 +56,17 @@ function hide() {
         requestAnimationFrame(hide);
     }
 }
-
+function moveShip(){
+    requestAnimationFrame(moveShip);
+    if (shipX<=1||shipY>=60) {
+        shipX = 87;
+        shipY = -30;
+    }
+    shipX =shipX+ speedX;
+    shipY =shipY+ speedY;
+    ship.style.left = shipX + "vw";
+    ship.style.top = shipY + "vh";
+}
 function startHide() {
     const rect = ghost.getBoundingClientRect(); 
     dstX = Math.floor(Math.random() * (winWidth - rect.width));
@@ -61,6 +76,7 @@ function startHide() {
 
 
 window.addEventListener("load", setWinSize);
+window.addEventListener("load", moveShip);
 window.addEventListener("resize", setWinSize);
 
 ghost.addEventListener("pointermove", startHide);
